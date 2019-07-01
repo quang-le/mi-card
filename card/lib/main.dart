@@ -35,7 +35,7 @@ class App extends StatelessWidget {
               Text(
                 'Quang Le',
                 style: TextStyle(
-                  fontSize: 45,
+                  fontSize: 46,
                   color: Colors.white,
                   fontFamily: 'Raleway',
                   // fontStyle: FontStyle.normal,
@@ -52,7 +52,9 @@ class App extends StatelessWidget {
               Builder(builder: (context) {
                 double screenWidth = MediaQuery.of(context).size.width;
                 return Container(
-                    width: screenWidth * 0.75,
+                    width: screenWidth > 320
+                        ? screenWidth * 0.7
+                        : screenWidth * 0.9,
                     color: Colors.white,
                     //color: Colors.white,
                     child: Padding(
@@ -79,8 +81,10 @@ class App extends StatelessWidget {
               SizedBox(height: 20.0),
               Builder(builder: (context) {
                 double screenWidth = MediaQuery.of(context).size.width;
+                print(screenWidth);
                 return Container(
-                  width: screenWidth * 0.75,
+                  width:
+                      screenWidth > 320 ? screenWidth * 0.7 : screenWidth * 0.9,
                   color: Colors.white,
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -105,8 +109,10 @@ class App extends StatelessWidget {
                 );
               }),
               Spacer(flex: 2),
-              Text("Made with Flutter - font by https://artsyomni.com/",
-                  style: TextStyle(color: Colors.blueGrey[700])),
+              Text(
+                "Made with Flutter",
+                style: TextStyle(color: Colors.blueGrey[700]),
+              ),
               SizedBox(height: 25),
             ],
           ),
