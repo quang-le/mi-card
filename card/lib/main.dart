@@ -13,7 +13,6 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      //backgroundColor: Colors.green[400],
       body: scaffoldHome(
         assetPath: 'assets/images/northern_lights.jpg',
         child: Column(
@@ -21,23 +20,9 @@ class App extends StatelessWidget {
           // crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Spacer(flex: 3),
-            Container(
-              padding: EdgeInsets.all(2.0),
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.white,
-              ),
-              child: RawMaterialButton(
-                onPressed: () {
-                  _launchURL(
-                      'https://www.linkedin.com/in/quang-son-le-2b88988/');
-                },
-                child: CircleAvatar(
-                  backgroundImage: AssetImage('assets/images/IMG_7948.JPG'),
-                  radius: 60,
-                ),
-              ),
-            ),
+            _avatar(
+                url: 'https://www.linkedin.com/in/quang-son-le-2b88988/',
+                asset: 'assets/images/IMG_7948.JPG'),
             SizedBox(height: 15.0),
             Text(
               'Quang Le',
@@ -55,10 +40,7 @@ class App extends StatelessWidget {
                     fontSize: 25,
                     color: Colors.white,
                     fontFamily: 'JuliusSansOne')),
-            SizedBox(
-                height: 25.0,
-                width: 150,
-                child: Divider(height: 10, color: Colors.white)),
+            _line(height: 25, width: 150, dividerHeight: 10),
             _contactField(
                 context, Icons.phone, 'tel: +32477606291', '+32 477 60 62 91'),
             SizedBox(height: 10.0),
@@ -77,6 +59,32 @@ class App extends StatelessWidget {
         ),
       ),
     ));
+  }
+
+  Widget _avatar({String url, String asset}) {
+    return Container(
+      padding: EdgeInsets.all(2.0),
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: Colors.white,
+      ),
+      child: RawMaterialButton(
+        onPressed: () {
+          _launchURL(url);
+        },
+        child: CircleAvatar(
+          backgroundImage: AssetImage(asset),
+          radius: 60,
+        ),
+      ),
+    );
+  }
+
+  Widget _line({double height, double width, double dividerHeight}) {
+    return SizedBox(
+        height: height,
+        width: width,
+        child: Divider(height: dividerHeight, color: Colors.white));
   }
 
   Widget _contactField(BuildContext context, IconData icon, String contactUrl,
@@ -118,7 +126,6 @@ class App extends StatelessWidget {
     });
   }
 
-  //START shared widgets
   Widget scaffoldHome({String assetPath, Widget child}) {
     return Container(
       decoration: BoxDecoration(
@@ -129,7 +136,6 @@ class App extends StatelessWidget {
     );
   }
 
-  //END shared widgets
   void _launchURL(String url) async {
     if (await canLaunch(url)) {
       await launch(url);
