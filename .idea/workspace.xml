@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="435d7306-bef0-4abd-8185-0ca90c18d353" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/web/web/assets/images/IMG_7948.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/assets/images/northern_light.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/assets/images/poppyAudi.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/card/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/card/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/web/lib/main.dart" afterDir="false" />
@@ -18,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/card/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="97" column="31" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="31" />
+            <state relative-caret-position="156">
+              <caret line="95" column="31" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -191,7 +194,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1615509" />
@@ -222,8 +224,8 @@
     <entry file="file://$PROJECT_DIR$/shared/lib/src/scaffold_home.dart" />
     <entry file="file://$PROJECT_DIR$/card/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="97" column="31" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="31" />
+        <state relative-caret-position="156">
+          <caret line="95" column="31" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

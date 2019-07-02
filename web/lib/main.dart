@@ -67,7 +67,7 @@ class App extends StatelessWidget {
                         'dev.quang.le@gmail.com'),
                     Spacer(flex: 4),
                     Text(
-                      "Made with Flutter",
+                      "Made by porting Flutter code to Flutter Web",
                       style: TextStyle(color: Colors.blueGrey[700]),
                     ),
                     SizedBox(height: screenHeight > 500 ? 25 : 10),
@@ -84,9 +84,6 @@ class App extends StatelessWidget {
       [String contactToDisplay]) {
     return Builder(builder: (context) {
       double screenWidth = MediaQuery.of(context).size.width;
-      double screenHeight = MediaQuery.of(context).size.height;
-      print (screenWidth);
-
       return Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
